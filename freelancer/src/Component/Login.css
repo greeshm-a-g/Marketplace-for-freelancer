@@ -1,58 +1,11 @@
-/* .btn-signup{
-    border: none;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 10px;
-    
-    background-color: #1A728E;
-    padding: 16px 30px;
-    color: #fff;
-    
-    transition: 0.6s;
-}
-.btn-signup:hover{
-    border-radius: 10px;
-    box-shadow: 0 0 0 4px #fff ,
-    0 0 0 8px #1A728E;
-
-}
-.bannerimg{
-    background-image: url('../Image/banner.png');
-    height: 635px;
-    width: 1400px;
-}
-
-.container{
-    
-    
-    background-image: url('../Image/banner.png');
-}
-.row-1col-2{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
-.logo{
-    margin-left: 200px;
-    margin-top: -150px;
-}
-
-
-
-
-
-
-
-
-    
-
- */
- .reset{
+.reset{
     margin-right: 150px;
  }
  .bg-image{
     background-image: url('../Image/banner.png');
+    background-size: cover;
+    background-position: center;
+    
 }
 .btn-login{
     border: none;
@@ -76,16 +29,11 @@
     background-color: white;
     border-radius: 10px;
 } 
-.row-1col-2{
+.connect {
     color: white;
     text-align: center;
     font-size: 40px;
 }
-.logo{
-    margin-left: 300px;
-    margin-top: -180px;
-}
-.row-5col-1{
-    margin-left: -100px;
-}
+
+
 

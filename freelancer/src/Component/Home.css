@@ -1,86 +1,74 @@
 
 .img{
     background-image: url('../Image/banner.png');
-    height: 1100px;
+    background-size: cover;
+    background-position: center;
      
 }
-/* .top{
+.top{
     background-image: url('../Image/banner_top.png');
-    height: 235px;
-    
-}  */
+    background-size: cover;
+    background-position: center;
+}  
 
-.con-btn{
+.button{
     
     border: none;
-    width: 418px;
-    height: 98px; 
-    font-size: 35px;
+    
+    
     
     margin-top: -1px;
     background-color: #1A728E;
     padding: 16px 30px;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 5px; 
     transition: 0.6s;
 }
-.con-btn:hover{
-    border-radius: 100px;
+.button:hover{
+    /* border-radius: 100px; */
     box-shadow: 0 0 0 4px #fff ,
     0 0 0 8px #1A728E;
 }
 .banner_3{
     background-image: url('../Image/banner_3.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 517.06px;
     margin-top: 100px;
-    /* width: 1440px; */
-    height: 517.06px; 
+   
+    
     
 }
 .label{
-    background-color:#fff;
-    border-radius: 20px;
-    width: 500px;
-    height: 100px;
-   
-   
+    background-color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+ 
 }
+
 .ban2{
     background-image: url('../Image/banner2.png');
-    /* height: 619.09px;
-    width: 1440px; */
+    background-size: cover;
+    background-position: center;
 }
-.laptop{
-    /* background-image: url('../Image/laptop.png');
-    height: 203.5px;
-    width:203.5px;
-    margin-left: 610px;  */
-}
+
+
 .secure{
     background-image: url('../Image/secure.png');
-    margin-left: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
     margin-top: 50px;
-    border-radius: 10px;
-    /* height: 405.43px;
-    width:1080px; */
-} 
-.side{
-    
-    position: absolute;
-    margin-top: 50px;
-    background-image: url('../Image/side_fig.png');
-    width: 571.25px;
     height: 405.43px;
-    margin-left: 630px;
-    
-}
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
 .btn-grow{
     margin-top: 30px;
     border: none;
-    width: 441px;
-    height:98px;
-    font-size: 35px;
-    
-    
     background-color: #1A728E;
     padding: 16px 30px;
     color: #fff;
@@ -93,25 +81,28 @@
 }
 .banner3{
     background-image: url('../Image/banner3.png');
+    background-size:100%;
+    background-repeat: no-repeat;
     margin-top: 100px;
     height: 520.18px;
-    width: 1440px;
-} 
-.card-body{
-    margin-top: 50px;
-    margin-left: 100px;
 }
-.img-fluid{
+
+.cup{
     margin-top: 50px;
-    margin-left: 100px;
-}
-.container{
-    width: min(100%,950px);
+    
+    margin-bottom: 50px;
 }
 .foot {
     font-size: 20px;
    margin-top: 100px;
 }
+
+.tableimg{
+    background-image: url('../Image/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
