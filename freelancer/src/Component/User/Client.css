@@ -1,0 +1,241 @@
+/* register */
+.userbackground{
+    background-image: url('.././../Image/userbackground.jpg'); 
+    background-size: cover;
+    background-position: center;
+     
+}
+.userblur{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-align: left;
+}
+.inputblur{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+/* navbar */
+.navlist{
+    List-style-type: none;
+    display: flex;
+
+}
+.nav-link{
+position: relative;
+text-decoration: none; 
+color: white;
+font-size: 20px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+letter-spacing: 3px; 
+padding: 15px 30px;
+margin:0 18px;
+transition: color 0.3s ease-in-out;
+}
+
+.nav-link::before{
+z-index: 1; 
+content:"";
+position: absolute;
+top: 0;
+bottom:0;
+Left: 0;
+width: 0;
+border-radius: 30px;
+transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+width: 100%;
+height: 5px;
+border-radius: 30px;
+background-color:#1A728E;
+}
+.nav-link:hover{
+color: #fff;
+}
+
+
+.btn-client{
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.6s;
+    border-radius: 5px;
+    background-color: #1A728E;
+    margin-left: 25px;
+}
+
+
+/* addrequest */
+.addrequest{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    background-color: white;
+    border-radius: 10px;
+}
+.addreqinput{
+    background-color:#ebeced;
+    border: none;
+}
+.addreqlabel{
+    color: #0c637d;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: large;
+}
+/* PAYMENT */
+
+
+.payment-container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+}
+
+
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+/* 
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+} */
+
+
+.btnpayment {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:#1A728E;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btnpayment:hover {
+    background-color: #025678;
+}
+ 
+/* MYREQUEST */
+.request-status {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.request-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.request-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.request-info p {
+    margin-bottom: 5px;
+}
+
+.request-image img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.freelancer-responses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* .freelancerbackcard {
+    background-color: #1A728E;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     width: calc(33.33% - 20px); 
+         transition: transform 0.3s ease;
+ 
+
+}
+
+.freelancer-card p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+
+
+.btnviewfreelancer {
+    background-color: #033949;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+} */
+
+/* viewfreelancermsg */
+
+
+
+.msgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+    display: flex;
+}
+
+.msgcard1{
+    background-color: #fff;
+    border: solid  #ddd;
+    border-radius: 10px;
+    
+    padding: 20px;
+    width:300px ;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.msgcard2{
+    background-color: #fff;
+    border: solid   #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

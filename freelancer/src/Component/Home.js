@@ -1,26 +1,21 @@
 import React from 'react'
 import "../Component/Home.css"
-import side from "../Image/side_fig.png"
-import HomeFirst from './HomeFirst'
-import HomeLast from './HomeLast'
+import side from "../Image/image copy.png"
 import laptop from "../Image/laptop.png"
 import icon from"../Image/gro-icons_connect.png"
 import con from"../Image/icon_connect.png"
-
+import Footer from './Footer'
 
 
 function Home() {
   return (
     <div>
-
-      <HomeFirst/>
-      
         <p style={{ fontSize: '45.03px', color: '#1A728E', textAlign: 'center', margin: '90px', fontWeight: 'lighter' }}>Lost equipment? Found inspiration?</p>
         <p style={{ fontSize: '29.93px', color: '#1A728E', textAlign: 'center', margin: '90px', fontWeight: 'normal' }}>Join CONNECT, the trusted network for <br></br>freelancing professionals</p>
       
       <div class="row-1col-2" className='connect'>
-        <button type="con-btn" class="con-btn button">Connect Now<img src={icon} />
-</button>
+      <button type="button" class="btn btn-primary btn-grow">CONNECT NOW<img src={icon}/></button>
+
       </div>
       <div className='banner_3'><br></br>
           <div className='label'>
@@ -56,20 +51,20 @@ function Home() {
                 <h5 class="card-title" style={{ fontSize: '45.03px', color: '#1A728E', textAlign: 'center' }}>Community-Driven</h5>
                 <p class="card-text" style={{ fontSize: '29.09px', color: '#1A728E', textAlign: 'center' }}>Join CONNECT, the trusted network for freelancing professionals</p>
                 <div class="row-1col-2" className='connect'>
-                  <button type="button" className="btn-grow" >GROW <img src={con}/></button>
+                <button type="button" class="btn btn-primary btn-grow">GROW<img src={con}/></button>
               </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='banner3'>
+      <div className="congif">
+      </div>
+      {/* <div className='banner3'>
      
           <p style={{color:'white',textAlign:'center',fontSize:'4vmin',backgroundColor:'rgba(5, 205, 231, 1)',marginLeft:'200px',marginRight:'200px'}}>Connect to Network </p>
       
-      </div> 
-      <HomeLast/>
-     
+      </div>  */}
     </div >
 
   )

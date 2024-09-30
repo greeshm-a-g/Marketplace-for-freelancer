@@ -1,6 +1,5 @@
 import React from 'react'
 import bea from "../Image/Beauty.png"
-import Footer from './Footer'
 function HomeLast() {
   return (
     <div>
@@ -14,7 +13,6 @@ function HomeLast() {
       </div>
       </div>
       <p style={{textAlign:'center',fontSize:'31px'}}>Amazing Coder</p>
-      <Footer/>
     </div>
   )
 }

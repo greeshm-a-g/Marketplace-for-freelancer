@@ -1,28 +1,39 @@
 import React, { useState } from 'react'
-import "../Component/Login.css"
-
-import logo from "../Image/gro-icons_connect.png"
-import Footer from './Footer'
-import axios from 'axios'
-
+import "../../Component/Login.css"
+import logo from "../../Image/gro-icons_connect.png"
+import Footer from '../Footer'
+import{useNavigate}from 'react-router-dom'
 function Login() {
-  const[logi,setlogi]=useState({UserName:'',Email:''})
+  const[logi,setlogi]=useState({UserName:'',Password:''})
   const pagefn=(sub)=>{
       console.log(sub)
       // console.log(com)
       setlogi({...logi,[sub.target.name]:sub.target.value})
   }
-  console.log(logi)
-  const note=(book)=>{
-      book.preventDefault()
-      axios.post('https://jsonplaceholder.typicode.com/posts',logi)
-      .then(result=>{
-          console.log(result)
-      })
-     .catch(error=>{
-      console.log(error)
-     }) 
-  }
+  const  navigate=useNavigate();
+  const onSubmit = (note)=>{
+   note.preventDefault()
+  
+  
+      if(logi.UserName==="Admin"&& logi.Password==="123"){
+        alert("Login successfull");
+        navigate('/connect')
+
+      }
+      else
+      {
+         if(logi.UserName!=="Admin"){
+        alert("UserName not found")
+      }
+       if(logi.Password!=="123"){
+        alert("Password is not found")
+      }
+    }
+  };
+      
+
+  
+
   return (
    
     <div>
@@ -37,20 +48,20 @@ function Login() {
           <div class="card bg-white text-black" >
            <div class="card-body p-5 text-center">
             <div class="mb-md-5 mt-md-4 pb-5">
-            <form onSubmit={note}>
-              <h1 style={{color:'#1A728E',fontSize:'30px'}}>Sign In</h1><br></br><br></br>
+            <form onSubmit={onSubmit}>
+              <h1 style={{color:'#1A728E',fontSize:'30px'}}>Admin Login</h1><br></br><br></br>
             <div class="row mb-3 col-12">
                 <label style={{color:'#1A728E',fontSize:'20px',textAlign:'left'}}>UserName</label>
                 <input type="text" placeholder='name'class="form-control" onChange={pagefn} name='UserName' value={logi.name}/>
             </div>
               <div class="row mb-3 col-12">
-                <label style={{color:'#1A728E',fontSize:'20px',textAlign:'left'}}>Email</label>
-                <input type="email" placeholder='email'class="form-control"onChange={pagefn} name='Email'value={logi.Email}/>
+                <label style={{color:'#1A728E',fontSize:'20px',textAlign:'left'}}>Password</label>
+                <input type="Password" placeholder='password'class="form-control"onChange={pagefn} name='Password'value={logi.Password}/>
             </div>
             <div class="row mb-3 col-12">
-                <button type='submit'className='btn-signup'style={{backgroundColor:'#1A728E',border:'none'}}>Sign In</button>
+                <button type='submit'className='btn-signup'style={{backgroundColor:'#1A728E',border:'none'}}>Login</button>
             </div>
-            <div className='col-12'>
+            {/* <div className='col-12'>
                 <div className='row'>
                     <div className='col-6'>
                     <a href="">Reset Password</a>
@@ -59,7 +70,7 @@ function Login() {
                     <a href="">Sign Up</a>
                     </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div>
                   </div>
                </form>

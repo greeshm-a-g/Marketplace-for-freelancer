@@ -1,0 +1,106 @@
+/* Adminsidedashbord  */
+
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background-color: #1A728E;
+    color: #fff;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: #fff;
+    padding: 15px;
+    font-size: larger;
+    text-decoration: none;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #094253;
+}
+.content {
+    margin-left: 240px;
+    padding: 20px;
+}
+/* card */
+.showcards{
+  background-color: #1A728E;
+  color: #fff;
+  margin-top: 70px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #fff rgba(0, 0, 0, 0.1);
+}
+.showcards:hover{
+  background-color: #fff;
+color: #032f3b;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+transition: all .80s;
+
+} 
+
+  
+
+/* Accept Reject */
+.Accept:hover{
+    box-shadow: 0 0 0 1px  #032f3b ,
+    0 0 0 4px green;
+}
+.Reject:hover{
+  box-shadow: 0 0 0 1px  #032f3b ,
+    0 0 0 4px red;
+}
+/* usertable */
+.usertable{
+  margin-top: 50px;
+  border: none;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+ 
+/* .freelancercard  */
+.freelancercardalign {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.freelancercard {
+  display: flex;
+  width: 300px; 
+  align-items: center; 
+  padding: 20px;
+  background-color: #01495f; 
+  color: white; 
+  border-radius: 10px; 
+  transition: transform 0.3s; 
+}
+
+
+
+.itemimg {
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%; 
+  overflow: hidden; 
+  margin-bottom: 15px; 
+}
+
+.itemimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+
+   
